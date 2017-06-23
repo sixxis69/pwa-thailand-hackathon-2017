@@ -1,0 +1,22 @@
+nav{
+  position: absolute;
+  width: 100%;
+  .nav-container{
+    font-size: 0;
+    .nav-item{
+      display: inline-block;
+      width: 50%; height: 60px;
+      background-color: $color-gray-dark;
+      text-align: center;
+      position: relative;
+      a{
+        font-size: 40px;
+        line-height: 60px;
+        color: $color-white;
+      }
+      &.is-active{
+        background-color: $color-brand;
+      }
+    }
+  }
+}
