@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>PWA</title>
+
+<!-- VIEWPORT -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+
+<!-- CSS -->
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+    <div class="global-container">
+
+    <div class="page-container">
+      <h1 class="logo">LOGO</h1>
+
+      <form action="#">
+        <div>
+          <label for="pwa-email">EMAIL</label>
+          <input type="email" id="pwa-email" name="pwa-email">
+        </div>
+        <div>
+          <label for="pwa-password">PASSWORD</label>
+          <input type="password" id="pwa-password" name="pwa-password">
+        </div>
+        <button type="submit">Log In</button>
+        <p class="note">Don't have an account ? <a href="sign-up.html">Sign Up</a></p>
+      </form>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAOK3Up2uCE2ZFiqfGw7QtBxuKYeWV2WY4",
+    authDomain: "pwa-2017-819c0.firebaseapp.com",
+    databaseURL: "https://pwa-2017-819c0.firebaseio.com",
+    projectId: "pwa-2017-819c0",
+    storageBucket: "pwa-2017-819c0.appspot.com",
+    messagingSenderId: "290762061657"
+  };
+  firebase.initializeApp(config);
+</script>
+  <script src="assets/scripts.js"></script>
+</body>
+</html>
