@@ -1,0 +1,47 @@
+.btn-lg{
+  width: 220px;
+  height: 220px;
+  padding: 0; margin: 0;
+  font-size: 48px;
+  line-height: 220px;
+  border: 8px solid $color-white;
+  border-radius: 50%;
+  box-shadow: 0 0 24px rgba(#000000,0.44);
+  cursor: pointer;
+  color: $color-white;
+  background-color: $color-white;
+  position: relative;
+  overflow: hidden;
+
+  span{
+    position: relative;
+    z-index: 2;
+  }
+
+  &:before{
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-image: linear-gradient(-180deg, #B4ED50 0%, #429321 100%);
+  }
+
+  &:after{
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-image: linear-gradient(-180deg, #F5515F 0%, #9F031B 100%);
+    opacity: 0;
+  }
+
+  // active
+  &.is-active{
+    &:before{
+      opacity: 0;
+    }
+    &:after{
+      opacity: 1;
+    }
+  }
+}

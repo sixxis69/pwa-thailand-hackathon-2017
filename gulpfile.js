@@ -28,7 +28,9 @@ var JS = {
     BASE.src + 'assets/js/vendors/modernizr/modernizr.min.js',
     BASE.src + 'assets/js/app/base/global.js',
     BASE.src + 'assets/js/app/base/base.js',
-    BASE.src + 'assets/js/app/components/modal.js'
+    BASE.src + 'assets/js/app/page/global-container.js',
+    BASE.src + 'assets/js/app/components/modal.js',
+    BASE.src + 'assets/js/app/components/toggle-button.js'
   ],
   dist: BASE.dist + 'assets',
   filename: 'scripts.js',

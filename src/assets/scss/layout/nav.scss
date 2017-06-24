@@ -9,14 +9,20 @@ nav{
       background-color: $color-gray-dark;
       text-align: center;
       position: relative;
-      a{
-        font-size: 40px;
+      font-size: 40px;
+      color: $color-white;
+      background-color: $color-brand;
+      border: 1px solid #fff;
+
+      span{
         line-height: 60px;
-        color: $color-white;
       }
-      &.is-active{
-        background-color: $color-brand;
+      .status-container{
+        position: absolute;
       }
+      // &.is-active{
+      //   background-color: $color-brand;
+      // }
     }
   }
 }

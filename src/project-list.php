@@ -27,7 +27,7 @@
 
         <div class="project-container">
 
-          <div class="project-item">
+          <a class="project-item" href="project-detail.php">
             <h2 class="project-name">INTERLAND</h2>
             <h3 class="project-owner">Owner</h3>
             <div class="detail-container">
@@ -42,9 +42,9 @@
                 <div class="progress progress-green" style="width:48%;"></div>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div class="project-item">
+          <a class="project-item" href="project-detail.php">
             <h2 class="project-name">INTERLAND</h2>
             <h3 class="project-owner">Owner</h3>
             <div class="detail-container">
@@ -59,7 +59,7 @@
                 <div class="progress" style="width:13%;"></div>
               </div>
             </div>
-          </div>
+          </a>
 
         </div>
 

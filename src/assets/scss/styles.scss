@@ -6,9 +6,11 @@
 
 @import "layout/base";
 @import "layout/page-title";
-@import "layout/input";
 @import "layout/nav";
-@import "layout/modal";
+
+@import "components/button";
+@import "components/input";
+@import "components/modal";
 
 @import "page/login";
 @import "page/project-list";

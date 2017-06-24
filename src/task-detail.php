@@ -11,6 +11,13 @@
       <!-- BEGIN PAGE TITLE -->
       <div class="page-title">
         <h1>Design UI</h1>
+        <div class="page-action">
+          <select name="" id="">
+            <option value="">All</option>
+            <option value="">Completed</option>
+            <option value="">In Progress</option>
+          </select>
+        </div>
       </div>
       <!-- END PAGE TITLE -->
 
@@ -38,7 +45,7 @@
         </div>
 
         <div class="button-container">
-          <button>START</button>
+          <button class="btn-lg" data-toggle-button><span>START</span></button>
         </div>
 
       </div>

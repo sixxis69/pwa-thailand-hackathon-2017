@@ -24,7 +24,7 @@
 
         <div class="project-container">
 
-          <div class="project-item">
+          <a class="project-item" href="task-detail.php">
             <h2 class="project-name">INTERLAND</h2>
             <div class="detail-container">
               <h3 class="project-owner">Owner</h3>
@@ -32,9 +32,9 @@
                 <h5 class="time"><span>13.40</span> HOURS</h5>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div class="project-item">
+          <a class="project-item" href="task-detail.php">
             <h2 class="project-name">INTERLAND</h2>
             <div class="detail-container">
               <h3 class="project-owner">Owner</h3>
@@ -42,7 +42,7 @@
                 <h5 class="time"><span>13.40</span> HOURS</h5>
               </div>
             </div>
-          </div>
+          </a>
 
         </div>
 
@@ -55,10 +55,5 @@
   </div>
 
   <script src="assets/scripts.js"></script>
-  <script>
-    jQuery(document).ready(function(){
-      jQuery('.nav-item').eq(1).addClass('is-active');
-    });
-  </script>
 </body>
 </html>
