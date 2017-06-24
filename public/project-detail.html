@@ -13,56 +13,63 @@
 <meta name="format-detection" content="telephone=no">
 
 <!-- CSS -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-
     <div class="global-container">
 
     <div class="page-container">
       <!-- BEGIN PAGE TITLE -->
-      <div class="page-title">
-        <h1>INTERLAND</h1>
-        <div class="page-action">
-          <a href="#" class="btn-create" data-modal-trigger="#create-task-modal"><span></span></a>
-        </div>
+      <div class="page-header">
+        <h1 class="type-headline">Interland</h1>
       </div>
       <!-- END PAGE TITLE -->
 
       <!-- BEGIN PAGE CONTENT -->
       <div class="page-content">
-        <div class="project-cover" style="background-color: gray; height: 400px;">
-
+        <div class="page-content-outer">
+        <div class="project-cover">
+          <span style="background-image: url(assets/images/mock.png)"></span>
         </div>
 
         <div class="project-container">
-
+          <a href="#" class="form-button" data-modal-trigger="#create-task-modal">Create task</a>
           <div class="project-item">
-            <h2 class="project-name">INTERLAND</h2>
-            <div class="detail-container">
+            <div class="project-title">
+              <h2 class="project-name">Interland</h2>
               <h3 class="project-owner">Owner</h3>
+            </div>
+
+            <div class="detail-container">
               <div class="time-container">
-                <h5 class="time"><span>13.40</span> HOURS</h5>
+                <label>Time Used</label>
+                <h5 class="time"><span>13:40</span> Hours</h5>
               </div>
             </div>
           </div>
 
           <div class="project-item">
-            <h2 class="project-name">INTERLAND</h2>
-            <div class="detail-container">
+            <div class="project-title">
+              <h2 class="project-name">Interland</h2>
               <h3 class="project-owner">Owner</h3>
+            </div>
+            <div class="detail-container">
+
               <div class="time-container">
-                <h5 class="time"><span>2.40</span> HOURS</h5>
+                <label>Time Used</label>
+                <h5 class="time"><span>2:40</span> Hours</h5>
               </div>
             </div>
           </div>
 
+        </div>
         </div>
 
       </div>
       <!-- END PAGE CONTENT -->
 
-      <nav>
+      <!-- <nav>
   <div class="nav-container">
     <a class="nav-item" href="project-list.html">
       <span>Project</span>
@@ -74,7 +81,23 @@
       </div>
     </a>
   </div>
-</nav>
+</nav> -->
+
+<div class="page-footer">
+  <a class="active" href="project-list.html">
+    <span>Project</span>
+  </a>
+  <a href="task-list.html">
+    <span>Mytask</span>
+    <div class="status-container">
+      <div class="status"></div>
+    </div>
+  </a>
+
+  <div class="button-action">
+    <a href="project-create.html" class="btn-create"><span></span></a>
+  </div>
+</div>
 
       <div id="create-task-modal" class="modal" data-pwa-modal>
   <div class="modal-wrapper">
@@ -82,25 +105,32 @@
       <div class="va-inner">
         <div class="modal-overlay"></div>
         <div class="modal-content">
-          <h3 class="modal-title">TASK</h3>
-          <form action="#" data-pwa-validate>
-            <div>
+
+          <form class="form" action="#" data-pwa-validate>
+            <!-- <h3 class="modal-title">TASK</h3> -->
+            <div class="form-headline">
+            <h1 class="type-headline">Task</h1>
+          </div>
+            <div class="form-group">
               <label for="">TASK NAME</label>
-              <input type="text">
+              <input class="form-control" type="text">
             </div>
-            <div>
+            <div class="form-group">
               <label for="">ASSIGN (OPTIONAL)</label>
-              <input type="text">
+              <input class="form-control" type="text">
             </div>
-            <div>
+            <div class="form-group">
               <label for="">TASK DETAIL</label>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <textarea class="form-control" name="" id="" cols="30" rows="4"></textarea>
             </div>
             <div>
-              <button type="submit">Create Task</button>
-              <button type="reset" data-pwa-modal-close>Cancel</button>
+              <button class="form-button" type="submit">Create Task</button>
+              <button class="form-button" type="reset" data-pwa-modal-close>Cancel</button>
             </div>
           </form>
+        </div>
+        <div class="modal-close-bt">
+          <span></span>
         </div>
       </div>
     </div>
@@ -110,5 +140,10 @@
   </div>
 
   <script src="assets/scripts.js"></script>
+  <script>
+    jQuery(document).ready(function(){
+      jQuery('.nav-item').eq(0).addClass('is-active');
+    });
+  </script>
 </body>
 </html>

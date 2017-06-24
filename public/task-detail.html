@@ -13,57 +13,65 @@
 <meta name="format-detection" content="telephone=no">
 
 <!-- CSS -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-
     <div class="global-container">
 
     <div class="page-container">
       <!-- BEGIN PAGE TITLE -->
-      <div class="page-title">
-        <h1>Design UI</h1>
-        <div class="page-action">
-          <select name="" id="">
-            <option value="">All</option>
-            <option value="">Completed</option>
-            <option value="">In Progress</option>
-          </select>
-        </div>
+      <div class="page-header">
+        <h1 class="type-headline">Design UI</h1>
       </div>
       <!-- END PAGE TITLE -->
 
       <!-- BEGIN PAGE CONTENT -->
       <div class="page-content">
-        <select name="" id="">
-          <option value="">All</option>
-          <option value="">Completed</option>
-          <option value="">In Progress</option>
-        </select>
+        <div class="page-content-outer">
+          <div class="select-wrapper">
+            <select name="" id="">
+              <option value="">All</option>
+              <option value="">Completed</option>
+              <option value="">In Progress</option>
+            </select>
+          </div>
 
-        <div class="project-container">
-          <div>
-            <label for="">TASK NAME</label>
-            <input type="text">
+          <div class="project-container">
+            <div class="form">
+              <div class="form-group">
+                <label for="">TASK NAME</label>
+                <div class="form-result">
+                  <span>Design UI</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="">TASK DETAIL</label>
+                <div class="form-result">
+                  <span>Login, Sign up, Forgot Password, Logo, Button Color Schema, Typo</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="">TIME USED</label>
+                <div class="form-result">
+                  <span>13:40 Hours</span>
+                  <span class="time">00:30:45</span>
+                </div>
+              </div>
+              <div class="button-container">
+                <button class="btn-lg" data-toggle-button><span>Start</span></button>
+              </div>
+            </div>
+
           </div>
-          <div>
-            <label for="">ASSIGN (OPTIONAL)</label>
-            <input type="text">
-          </div>
-          <div>
-            <label for="">TASK DETAIL</label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-          </div>
+
+
+
         </div>
-
-        <div class="button-container">
-          <button class="btn-lg" data-toggle-button><span>START</span></button>
-        </div>
-
       </div>
       <!-- END PAGE CONTENT -->
 
-      <nav>
+      <!-- <nav>
   <div class="nav-container">
     <a class="nav-item" href="project-list.html">
       <span>Project</span>
@@ -75,11 +83,32 @@
       </div>
     </a>
   </div>
-</nav>
+</nav> -->
+
+<div class="page-footer">
+  <a class="active" href="project-list.html">
+    <span>Project</span>
+  </a>
+  <a href="task-list.html">
+    <span>Mytask</span>
+    <div class="status-container">
+      <div class="status"></div>
+    </div>
+  </a>
+
+  <div class="button-action">
+    <a href="project-create.html" class="btn-create"><span></span></a>
+  </div>
+</div>
 
     </div>
   </div>
 
   <script src="assets/scripts.js"></script>
+  <script>
+  jQuery(document).ready(function(){
+    jQuery('.nav-item').eq(1).addClass('is-active');
+  });
+  </script>
 </body>
 </html>

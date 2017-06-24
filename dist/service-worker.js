@@ -7,7 +7,7 @@ self.addEventListener('install', function(e) {
     caches.open(CACHE_NAME).then(function(cache) {
       return cache.addAll([
         '',
-        'login.html',
+        'login.php',
         'assets/styles.css',
         'assets/scripts.js'
       ]);
@@ -16,6 +16,8 @@ self.addEventListener('install', function(e) {
 });
 
 self.addEventListener('fetch', function(event) {
+
+  console.log(event.request.url);
 
   event.respondWith(
     caches.match(event.request).then(function(response) {

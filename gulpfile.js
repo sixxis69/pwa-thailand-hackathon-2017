@@ -7,7 +7,7 @@ var BASE = {
 };
 
 var STATIC = {
-  src: [ BASE.src + '*.*' , BASE.src + 'inc/**/*.*', BASE.src + 'assets/fonts/**/*.*'],
+  src: [ BASE.src + '*.*' , BASE.src + 'inc/**/*.*', BASE.src + 'assets/fonts/**/*.*', BASE.src + 'assets/app/**/*.*'],
   dist: BASE.dist
 };
 
@@ -26,6 +26,7 @@ var JS = {
   src: [
     BASE.src + 'assets/js/vendors/jquery/3.2.1/jquery.min.js',
     BASE.src + 'assets/js/vendors/modernizr/modernizr.min.js',
+    BASE.src + 'assets/js/vendors/pwacompat.min.js',
     BASE.src + 'assets/js/app/base/global.js',
     BASE.src + 'assets/js/app/base/base.js',
     BASE.src + 'assets/js/app/page/global-container.js',

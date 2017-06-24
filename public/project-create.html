@@ -13,39 +13,73 @@
 <meta name="format-detection" content="telephone=no">
 
 <!-- CSS -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-
     <div class="global-container">
 
     <div class="page-container">
       <!-- BEGIN PAGE TITLE -->
-      <div class="page-title">
-        <h1>Create Project</h1>
+      <div class="page-header">
+        <h1 class="type-headline">Create Project</h1>
       </div>
       <!-- END PAGE TITLE -->
 
       <!-- BEGIN PAGE CONTENT -->
       <div class="page-content">
-        <form action="">
-          <div>
+        <div class="page-content-outer">
+        <form action="project-detail.html" class="form">
+          <div class="form-group">
             <label for="pwa-project-name">PROJECT NAME</label>
-            <input type="text" id="pwa-project-name" name="pwa-project-name">
+            <input class="form-control" type="text" id="pwa-project-name" name="pwa-project-name">
           </div>
-          <div>
+          <div class="form-group">
             <input type="file">
           </div>
-          <button type="reset">Cancel</button>
-          <button type="submit">Submit Project</button>
+          <button class="form-button" type="reset">Cancel</button>
+          <button class="form-button" type="submit">Submit Project</button>
         </form>
-
+        </div>
       </div>
       <!-- END PAGE CONTENT -->
+      <!-- <nav>
+  <div class="nav-container">
+    <a class="nav-item" href="project-list.html">
+      <span>Project</span>
+    </a>
+    <a class="nav-item" href="task-list.html">
+      <span>Mytask</span>
+      <div class="status-container">
+        <div class="status"></div>
+      </div>
+    </a>
+  </div>
+</nav> -->
 
+<div class="page-footer">
+  <a class="active" href="project-list.html">
+    <span>Project</span>
+  </a>
+  <a href="task-list.html">
+    <span>Mytask</span>
+    <div class="status-container">
+      <div class="status"></div>
+    </div>
+  </a>
+
+  <div class="button-action">
+    <a href="project-create.html" class="btn-create"><span></span></a>
+  </div>
+</div>
     </div>
   </div>
 
   <script src="assets/scripts.js"></script>
+  <script>
+    jQuery(document).ready(function(){
+      jQuery('.nav-item').eq(0).addClass('is-active');
+    });
+  </script>
 </body>
 </html>

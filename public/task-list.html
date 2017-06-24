@@ -13,57 +13,66 @@
 <meta name="format-detection" content="telephone=no">
 
 <!-- CSS -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
-<body><script id="__bs_script__">//<![CDATA[
-    document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.18.12'><\/script>".replace("HOST", location.hostname));
-//]]></script>
-
+<body>
     <div class="global-container">
 
     <div class="page-container">
       <!-- BEGIN PAGE TITLE -->
-      <div class="page-title">
-        <h1>My Task</h1>
+      <div class="page-header">
+        <h1 class="type-headline">My Task</h1>
       </div>
       <!-- END PAGE TITLE -->
 
       <!-- BEGIN PAGE CONTENT -->
       <div class="page-content">
-        <select name="" id="">
-          <option value="">All</option>
-          <option value="">Completed</option>
-          <option value="">In Progress</option>
-        </select>
+        <div class="page-content-outer">
+          <div class="select-wrapper">
+            <select name="" id="">
+              <option value="">All</option>
+              <option value="">Completed</option>
+              <option value="">In Progress</option>
+            </select>
+          </div>
 
         <div class="project-container">
 
-          <a class="project-item" href="task-detail.html">
-            <h2 class="project-name">INTERLAND</h2>
-            <div class="detail-container">
+          <a class="project-item active" href="task-detail.html">
+            <div class="project-title">
+              <h2 class="project-name">Design UI</h2>
               <h3 class="project-owner">Owner</h3>
+            </div>
+
+            <div class="detail-container">
               <div class="time-container">
-                <h5 class="time"><span>13.40</span> HOURS</h5>
+                <label>Time Used</label>
+                <h5 class="time"><span>13:40</span> Hours</h5>
               </div>
             </div>
           </a>
 
           <a class="project-item" href="task-detail.html">
-            <h2 class="project-name">INTERLAND</h2>
-            <div class="detail-container">
+            <div class="project-title">
+              <h2 class="project-name">Interland</h2>
               <h3 class="project-owner">Owner</h3>
+            </div>
+
+            <div class="detail-container">
               <div class="time-container">
-                <h5 class="time"><span>13.40</span> HOURS</h5>
+                <label>Time Used</label>
+                <h5 class="time"><span>13:40</span> Hours</h5>
               </div>
             </div>
           </a>
 
         </div>
-
+</div>
       </div>
       <!-- END PAGE CONTENT -->
 
-      <nav>
+      <!-- <nav>
   <div class="nav-container">
     <a class="nav-item" href="project-list.html">
       <span>Project</span>
@@ -75,7 +84,23 @@
       </div>
     </a>
   </div>
-</nav>
+</nav> -->
+
+<div class="page-footer">
+  <a class="active" href="project-list.html">
+    <span>Project</span>
+  </a>
+  <a href="task-list.html">
+    <span>Mytask</span>
+    <div class="status-container">
+      <div class="status"></div>
+    </div>
+  </a>
+
+  <div class="button-action">
+    <a href="project-create.html" class="btn-create"><span></span></a>
+  </div>
+</div>
 
     </div>
   </div>
