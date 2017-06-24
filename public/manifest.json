@@ -1,0 +1,16 @@
+{
+  "name": "Progressive Time",
+  "short_name": "🕐",
+  "start_url": "login.html",
+  "theme_color": "#7ECECD",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "assets/app/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
