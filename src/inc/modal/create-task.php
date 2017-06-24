@@ -4,25 +4,32 @@
       <div class="va-inner">
         <div class="modal-overlay"></div>
         <div class="modal-content">
-          <h3 class="modal-title">TASK</h3>
-          <form action="#" data-pwa-validate>
-            <div>
+
+          <form class="form" action="#" data-pwa-validate>
+            <!-- <h3 class="modal-title">TASK</h3> -->
+            <div class="form-headline">
+            <h1 class="type-headline">Task</h1>
+          </div>
+            <div class="form-group">
               <label for="">TASK NAME</label>
-              <input type="text">
+              <input class="form-control" type="text">
             </div>
-            <div>
+            <div class="form-group">
               <label for="">ASSIGN (OPTIONAL)</label>
-              <input type="text">
+              <input class="form-control" type="text">
             </div>
-            <div>
+            <div class="form-group">
               <label for="">TASK DETAIL</label>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <textarea class="form-control" name="" id="" cols="30" rows="4"></textarea>
             </div>
             <div>
-              <button type="submit">Create Task</button>
-              <button type="reset" data-pwa-modal-close>Cancel</button>
+              <button class="form-button" type="submit">Create Task</button>
+              <button class="form-button" type="reset" data-pwa-modal-close>Cancel</button>
             </div>
           </form>
+        </div>
+        <div class="modal-close-bt">
+          <span></span>
         </div>
       </div>
     </div>
