@@ -28,12 +28,15 @@ var JS = {
     BASE.src + 'assets/js/vendors/modernizr/modernizr.min.js',
     BASE.src + 'assets/js/vendors/pwacompat.min.js',
     BASE.src + 'assets/js/vendors/selectize.min.js',
+    BASE.src + 'assets/js/vendors/parsley.min.js',
     BASE.src + 'assets/js/app/base/global.js',
     BASE.src + 'assets/js/app/base/base.js',
     BASE.src + 'assets/js/app/page/global-container.js',
     BASE.src + 'assets/js/app/components/modal.js',
     BASE.src + 'assets/js/app/components/toggle-button.js',
-    BASE.src + 'assets/js/app/components/email-select.js'
+    BASE.src + 'assets/js/app/components/email-select.js',
+    BASE.src + 'assets/js/app/components/loading.js',
+    BASE.src + 'assets/js/app/components/form-validate.js'
   ],
   dist: BASE.dist + 'assets',
   filename: 'scripts.js',
@@ -99,8 +102,13 @@ gulp.task('browser-sync', function() {
  gulp.watch(JS.src, ['js', browserSync.reload]);
 });
 
+gulp.watch(STATIC.src, ['static']);
+gulp.watch(IMG.src, ['img']);
+gulp.watch(CSS.watch, ['css']);
+gulp.watch(JS.src, ['js']);
 
-gulp.task( 'default', ['static', 'img', 'css', 'js', 'browser-sync'] );
+gulp.task( 'default', ['static', 'img', 'css', 'js'] );
+// gulp.task( 'default', ['static', 'img', 'css', 'js', 'browser-sync'] );
 gulp.task( 'dist', ['static', 'img-build', 'css', 'js'] );
 
 

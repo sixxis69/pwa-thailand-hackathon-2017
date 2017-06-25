@@ -65,8 +65,11 @@
 
   <script src="assets/scripts.js"></script>
   <script>
+    // NOTE: add email
     jQuery(document).ready(function(){
-      jQuery('.nav-item').eq(0).addClass('is-active');
+      pwa_email_select.addOption('sixxis69@gmail.com','big');
+      pwa_email_select.addOption('iam.hachimitsu@gmail.com', 'nachaporn');
+      pwa_email_select.addOption('punnawat@gmail.com', 'punnawat');
     });
   </script>
 </body>

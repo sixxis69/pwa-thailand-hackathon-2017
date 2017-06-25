@@ -47,6 +47,16 @@ label {
   margin: 0;
   padding: 0;
   text-align: left;
+  transition: border-color .3s linear;
+  &:focus,
+  &.parsley-success{
+    transition: border-color .3s linear;
+    border-color: $color-brand !important;
+  }
+  &.parsley-error{
+    transition: border-color .3s linear;
+    border-color: $color-red !important;
+  }
 }
 textarea.form-control {
   height: auto;
@@ -77,6 +87,11 @@ textarea.form-control {
     line-height: 1;
 
   }
+}
+.error-log{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: $color-red;
 }
 .form-button {
   display: block;

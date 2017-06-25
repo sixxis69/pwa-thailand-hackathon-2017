@@ -10,9 +10,9 @@ $color-red: #EF6567;
 
 $bg:         #f9fcff;
 
-$brand-light:      #0FF2ED;
-$brand:      #1074FB;
-$brand-dark: #0B4FAD;
+$brand-light: #0FF2ED;
+$brand:       #1074FB;
+$brand-dark:  #0B4FAD;
 
 $gray:       rgba(19,20,49,.6);
 $gray-light: #7997BF;
@@ -24,7 +24,7 @@ $border-input-color: #b2d2fd;
   background: linear-gradient(to right, #0b50ae 0%, #2c7cea 100%);
 }
 .bg-green-gradient {
-background: linear-gradient(to right, #00a9f8 1%, #22ffef 100%);
+ background: linear-gradient(to right, #00a9f8 1%, #22ffef 100%);
 }
 .bg-start {
   background: linear-gradient(-180deg, #2c7cea 0%, #0b50ae 100%);
@@ -32,3 +32,6 @@ background: linear-gradient(to right, #00a9f8 1%, #22ffef 100%);
 .bg-stop {
   background: linear-gradient(-180deg, #F5515F 0%, #9F031B 100%);
 }
+
+
+$pwa-easing: cubic-bezier(0.19, 1, 0.22, 1);

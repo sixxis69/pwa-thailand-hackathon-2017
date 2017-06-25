@@ -2,22 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Progressive Time</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Progressive Time</title>
 
-<link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="manifest.json">
 
-<!-- VIEWPORT -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta name="HandheldFriendly" content="true">
-<meta name="format-detection" content="telephone=no">
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/4.1.3/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/4.1.3/firebase-auth.js"></script>
+  <!-- <script defer src="/__/firebase/4.1.3/firebase-database.js"></script> -->
+  <!-- <script defer src="/__/firebase/4.1.3/firebase-messaging.js"></script> -->
+  <!-- <script defer src="/__/firebase/4.1.3/firebase-storage.js"></script> -->
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
 
-<!-- CSS -->
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css">
+  <!-- VIEWPORT -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-    <div class="global-container">
+  <div class="global-container">
+    <div class="loading-container" style="display:none;">
+      <div class="loader">
+        <div class="inner"></div>
+        <div class="inner"></div>
+        <div class="inner"></div>
+      </div>
+    </div>
     <div class="page-container">
       <!-- BEGIN PAGE TITLE -->
       <div class="page-header">
@@ -78,17 +95,17 @@
       </div>
       <!-- END PAGE CONTENT -->
       <!-- <nav>
-  <div class="nav-container">
-    <a class="nav-item" href="project-list.html">
+      <div class="nav-container">
+      <a class="nav-item" href="project-list.html">
       <span>Project</span>
     </a>
     <a class="nav-item" href="task-list.html">
-      <span>Mytask</span>
-      <div class="status-container">
-        <div class="status"></div>
-      </div>
-    </a>
+    <span>Mytask</span>
+    <div class="status-container">
+    <div class="status"></div>
   </div>
+</a>
+</div>
 </nav> -->
 
 <div class="page-footer">
@@ -106,14 +123,30 @@
     <a href="project-create.html" class="btn-create"><span></span></a>
   </div>
 </div>
-    </div>
-  </div>
+</div>
+</div>
 
-  <script src="assets/scripts.js"></script>
-  <script>
-    jQuery(document).ready(function(){
-      jQuery('.nav-item').eq(0).addClass('is-active');
-    });
-  </script>
+<script src="assets/scripts.js"></script>
+<script src="firebase/firebase.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+  // // The Firebase SDK is initialized and available here!
+  //
+  // firebase.auth().onAuthStateChanged(user => { });
+  // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+  // firebase.messaging().requestPermission().then(() => { });
+  // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+  //
+  // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+  try {
+    console.log('SDK is loaded');
+
+  } catch (e) {
+    console.error(e);
+  }
+});
+</script>
 </body>
 </html>

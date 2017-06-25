@@ -1,7 +1,6 @@
 var pwa_email_select = {
   selector: '[data-email-select]',
   init: function(){
-    console.log('init email with remove button');
     if(!$(pwa_email_select.selector).length) return;
 
     var REGEX_EMAIL = '([a-z0-9!#$%&\'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&\'*+/=?^_`{|}~-]+)*@' +

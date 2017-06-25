@@ -10,17 +10,20 @@
     <div class="page-container">
 
       <div class="page-outer">
-        <form action="#" class="form login-form">
+        <form action="#" class="form login-form" data-pwa-validate>
           <div class="form-headline">
-            <h1 class="type-headline">Login to PWA</h1>
+            <h1 class="type-headline">Progressive Time</h1>
           </div>
           <div class="form-group">
             <label for="pwa-email">Email</label>
-            <input class="form-control" type="email" id="pwa-email" name="pwa-email">
+            <input class="form-control" type="email" id="pwa-email" name="pwa-email" required>
           </div>
           <div class="form-group">
             <label for="pwa-password">Password</label>
-            <input class="form-control" type="password" id="pwa-password" name="pwa-password">
+            <input class="form-control" type="password" id="pwa-password" name="pwa-password" required>
+          </div>
+          <div class="form-group">
+            <p class="error-log"></p>
           </div>
           <button class="form-button" type="submit">Login</button>
           <p class="type-body-s">Don't have an account ? <a href="sign-up.php">Sign Up</a></p>
