@@ -90,6 +90,11 @@
 <script src="firebase/firebase.js"></script>
 <script>
 
+    setTimeout(function(){
+        pwa_loading.hide();
+        jQuery('body').addClass('is-animate');
+    },1000);
+
   function createProject(name,desc){
     var user = firebase.auth().currentUser;
     firebase.database().ref('projects/' + user.uid).push({

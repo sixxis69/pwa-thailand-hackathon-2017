@@ -149,17 +149,17 @@
           project_list = snapshot.val();
           $.each(project_list, function(i, item){
               console.log(item);
-              str = '<a class="project-item" href="project-detail.html"> ' +
+              str = '<a class="project-item" href="project-detail.html?pid=' + i + '"> ' +
                       '<div class="project-title"> ' +
                   '<h2 class="project-name">' + item.name + '</h2>' +
                   '<h3 class="project-owner">' + item.desc +'</h3>' +
                   '</div>' +
                   '<div class="detail-container">' +
                   '<h4 class="percent">48%</h4>' +
-                  '<div class="time-container">' +
-                  '<label>Time Used</label>' +
-                  '<h5 class="time"><span>13:40</span> Hours</h5>' +
-                  '</div>' +
+ //                 '<div class="time-container">' +
+ //                 '<label>Time Used</label>' +
+ //                 '<h5 class="time"><span>13:40</span> Hours</h5>' +
+ //                 '</div>' +
                   '</div>' +
                   '<div class="progress-container">' +
                   '<div class="progress-wrapper">' +
