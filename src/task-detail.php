@@ -3,7 +3,7 @@
 <head>
   <?php include("inc/metatag.php"); ?>
 </head>
-<body>
+<body class="task-page">
   <?php include("inc/loading.php"); ?>
   <div class="global-container">
 

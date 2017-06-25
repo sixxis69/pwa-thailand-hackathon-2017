@@ -15,7 +15,10 @@ self.addEventListener('install', function(e) {
         'task-list.html',
         'task-detail.html',
         'assets/styles.css',
-        'assets/scripts.js'
+        'assets/scripts.js',
+        'assets/images/bg.svg',
+        'assets/images/bg2.svg',
+        'assets/images/icon-plus.svg'
       ]);
     })
   );
