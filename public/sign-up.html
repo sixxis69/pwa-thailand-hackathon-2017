@@ -133,6 +133,12 @@
     } catch (e) {
       console.error(e);
     }
+
+    // NOTE: hide loading
+    setTimeout(function(){
+      pwa_loading.hide();
+      jQuery('body').addClass('is-animate');
+    },1000);
   });
   </script>
 </body>

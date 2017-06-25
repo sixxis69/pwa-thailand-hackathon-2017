@@ -12,4 +12,4 @@ var pwa_loading = {
   }
 };
 
-// site.ready.push(pwa_loading.hide);
+// site.ready.push(pwa_loading.show);
