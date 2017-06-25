@@ -132,12 +132,31 @@
 
     try {
       console.log('SDK is loaded');
-      initAuth();
+      initAuth(loadMyProject);
+
+
 
     } catch (e) {
       console.error(e);
     }
   });
+
+  function loadMyProject() {
+
+
+      var projects = firebase.database().ref('projects/' + user_uid);
+      projects.on('value', function(snapshot) {
+          project_list = snapshot.val();
+          $.each(project_list, function(i, item){
+              console.log(item);
+          });
+      });
+
+//      firebase.database().ref('projects/' + user_uid).once('value').then(function(snapshot) {
+//          var username = snapshot.val().username;
+//          // ...
+//      });
+  }
   </script>
 </body>
 </html>
