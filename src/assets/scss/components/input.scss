@@ -15,6 +15,7 @@ button, html [type="button"], [type="reset"], [type="submit"] {
   -webkit-appearance: button;
 }
 
+
 .form-group {
   margin-bottom: 20px;
 }
@@ -22,26 +23,25 @@ button, html [type="button"], [type="reset"], [type="submit"] {
 label {
   color: $gray-light;
   font-family: 'Roboto', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 1px;
   text-transform: uppercase;
-
   text-align: left;
 }
 .form-control {
   display: block;
   width: 100%;
   height: 50px;
-  color: $brand-dark;
+  color: $brand;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   line-height: normal;
   background-color: transparent;
   background-image: none;
   border: 0;
-  border-bottom: 2px solid $gray-light;
+  border-bottom: 2px solid $border-input-color;
   border-radius: 0;
   box-shadow: none;
   margin: 0;
@@ -49,34 +49,34 @@ label {
   text-align: left;
 }
 textarea.form-control {
-    height: auto;
-    resize: vertical;
-    overflow: auto;
-    min-height: 80px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+  height: auto;
+  resize: vertical;
+  overflow: auto;
+  min-height: 80px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 .form-result {
   display: block;
   width: 100%;
-  color: $brand-dark;
+  // color: $brand-dark;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-      font-weight: 400;
-    line-height: 26px;
+  font-weight: 400;
+  line-height: 26px;
   text-align: left;
   padding-top: 10px;
   display: flex;
-justify-content: space-between;
-align-items: flex-end;
+  justify-content: space-between;
+  align-items: flex-end;
 
-span.time {
-  color: $brand;
-      font-weight: 300;
-      font-size: 40px;
-      line-height: 1;
+  span.time {
+    color: $brand-light;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 1;
 
-}
+  }
 }
 .form-button {
   display: block;
@@ -100,6 +100,12 @@ span.time {
   cursor: pointer;
 
 }
+[type="submit"] {
+  + [type="reset"] {
+    background-color: transparent;
+    color: $gray-light;
+  }
+}
 
 .select-wrapper {
   position: relative;
@@ -113,15 +119,16 @@ span.time {
     -o-appearance: none;
     appearance: none;
     background-color: white;
-    padding: 10px 15px;
+    padding: 15px 15px;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 5px;
     border: 0;
 
-    color: $brand-dark;
+    color: $brand;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 29px;
+    font-size: 17px;
+    line-height: normal;
+    box-shadow: 0 4px 18px 0 rgba(189,208,223,0.26);
 
     &:after {
       content: '';
@@ -135,38 +142,6 @@ span.time {
       height: 16px;
       background: url(../img/cd-icon-arrow.svg) no-repeat center center;
       pointer-events: none;
-    }
-  }
-}
-
-.form {
-  position: relative;
-  max-width: 530px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 30px;
-  text-align: center;
-  // background-color: #fff;
-  // &:before {
-  //   left: 0;
-  //   top: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   content: "";
-  //   position: absolute;
-  //   box-shadow: 0 4px 18px 0 rgba(189,208,223,.26);
-  //   border-radius: 8px;
-  // }
-
-  &.login-form {
-    max-width: 420px;
-  }
-  .form-headline {
-    text-align: center;
-    .type-headline {
-      position: relative;
-      margin-bottom: 50px;
     }
   }
 }

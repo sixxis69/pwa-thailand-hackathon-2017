@@ -17,7 +17,7 @@
     <span>Project</span>
   </a>
   <a href="task-list.php">
-    <span>Mytask</span>
+    <span>My Task</span>
     <div class="status-container">
       <div class="status"></div>
     </div>

@@ -1,38 +1,19 @@
 
-body.login {
-  background-color: #03354e;
 
-  .global-container, .page-container{
-    height: 100%;
-  }
-  label {
-    color: rgba(white, .3);
-  }
-  .form-control {
-    color: rgba(white, 1);
-    border-bottom: 2px solid rgba(white, .3);
-  }
-  .type-headline {
-    color: white;
-  }
-  .type-body-s {
-    color: white;
-  }
-}
 
 body.start {
-  background-color: #03354e;
-  .page-header {
-    background-color: #014868;
-    color: white;
-    * {
-      color: white;
-    }
-  }
-  .select-wrapper select {
-    background-color: rgba(#014868, .6);
-    color: white;
-  }
+  @extend .bg-gradient;
+  // .page-header {
+  //   background-color: #014868;
+  //   color: white;
+  //   * {
+  //     color: white;
+  //   }
+  // }
+  // .select-wrapper select {
+  //   background-color: rgba(#014868, .6);
+  //   color: white;
+  // }
   label {
     color: rgba(white, .3);
   }
@@ -60,15 +41,15 @@ body.start {
   text-align: center;
 }
 
-.bg-form {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 200px;
-  width: 100%;
-  background-image: url(images/bg2.svg);
-  background-position: top;
-}
+// .bg-form {
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   height: 200px;
+//   width: 100%;
+//   background-image: url(images/bg2.svg);
+//   background-position: top;
+// }
 
 
 .page-outer {
@@ -96,20 +77,19 @@ body.start {
   display: flex;
   justify-content: center;
   align-items: center;
-  // background-color: #014868;
-  // color: white;
+  box-shadow: 0 5px 6px 0 rgba(48, 111, 197, 0.1);
 
   .type-headline {
-    color: $brand-dark;
-    // color: white;
+    color: $brand;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 20px;
   }
 }
 
 .page-footer {
   bottom: 0;
   display: flex;
+  box-shadow: 0 -5px 6px 0 rgba(48,111,197,0.1);
   > a {
     flex-grow: 1;
     flex-basis: 0;
@@ -121,7 +101,7 @@ body.start {
     position: relative;
     padding-bottom: 4px;
 
-    color: $gray-light;
+    color: $gray;
     font-size: 17px;
     &:after {
       content: "";
@@ -145,11 +125,12 @@ body.start {
   position: relative;
   width: 100%;
   height: auto;
-  overflow-y: auto;
+  overflow: auto;
+-webkit-overflow-scrolling: touch;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -164,7 +145,7 @@ body.start {
     // background-color: #fff;
     // box-shadow: 0 4px 18px 0 rgba(189,208,223,0.26);
     // border-radius: 8px;
-        padding: 20px 15px;
+        padding: 20px 0;
   }
 }
 

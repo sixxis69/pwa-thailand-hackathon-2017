@@ -23,10 +23,15 @@
             <input class="form-control" type="text" id="pwa-project-name" name="pwa-project-name">
           </div>
           <div class="form-group">
+            <label for="pwa-project-name">PROJECT Image</label>
             <input type="file">
+            <div class="project-cover">
+          <span style="background-image: url(assets/images/mock.png)"></span>
+        </div>
           </div>
-          <button class="form-button" type="reset">Cancel</button>
+
           <button class="form-button" type="submit">Submit Project</button>
+          <button class="form-button" type="reset">Cancel</button>
         </form>
         </div>
       </div>

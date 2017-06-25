@@ -61,6 +61,42 @@
                 </div>
               </div>
             </a>
+            <a class="project-item" href="project-detail.php">
+              <div class="project-title">
+                <h2 class="project-name">Interland</h2>
+                <h3 class="project-owner">Owner</h3>
+              </div>
+              <div class="detail-container">
+                <h4 class="percent">13%</h4>
+                <div class="time-container">
+                  <label>Time Used</label>
+                  <h5 class="time"><span>2:40</span> Hours</h5>
+                </div>
+              </div>
+              <div class="progress-container">
+                <div class="progress-wrapper">
+                  <div class="progress" style="width:13%;"></div>
+                </div>
+              </div>
+            </a>
+            <a class="project-item" href="project-detail.php">
+              <div class="project-title">
+                <h2 class="project-name">Interland</h2>
+                <h3 class="project-owner">Owner</h3>
+              </div>
+              <div class="detail-container">
+                <h4 class="percent">13%</h4>
+                <div class="time-container">
+                  <label>Time Used</label>
+                  <h5 class="time"><span>2:40</span> Hours</h5>
+                </div>
+              </div>
+              <div class="progress-container">
+                <div class="progress-wrapper">
+                  <div class="progress" style="width:13%;"></div>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
