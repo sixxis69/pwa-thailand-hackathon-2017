@@ -64,15 +64,6 @@
   <script src="assets/scripts.js"></script>
   <script src="firebase/firebase.js"></script>
   <script>
-
-  jQuery(function() {
-      firebase.auth().onAuthStateChanged(function(user) {
-          if (user) {
-              window.location.href = "project-list.html";
-          }
-      });
-  });
-
   function checkLogin(email,password){
     firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
       // Handle Errors here.
@@ -97,6 +88,12 @@
     // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
     //
     // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+    firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+            window.location.href = "project-list.html";
+        }
+    });
 
     try {
       // let app = firebase.app();
