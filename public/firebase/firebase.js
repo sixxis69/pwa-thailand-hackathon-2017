@@ -1,4 +1,4 @@
-function initAuth(){
+function initAuth(callback){
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       // User is signed in.
@@ -10,6 +10,10 @@ function initAuth(){
       var uid = user.uid;
       var providerData = user.providerData;
       // ...
+
+      if(callback){
+        callback();
+      }
     } else {
       // User is signed out.
       // ...
@@ -21,4 +25,9 @@ function initAuth(){
 
 function signOut(){
   firebase.auth().signOut();
+}
+
+function getParam(param){
+  var url = new URL(window.location.href);
+  return url.searchParams.get(param);
 }

@@ -40,20 +40,22 @@
     <div class="page-container">
       <!-- BEGIN PAGE TITLE -->
       <div class="page-header">
-        <h1 class="type-headline">Interland</h1>
+        <h1 id="project-name" class="type-headline">Interland</h1>
       </div>
       <!-- END PAGE TITLE -->
 
       <!-- BEGIN PAGE CONTENT -->
       <div class="page-content">
         <div class="page-content-outer">
-          <div class="project-cover">
+          <p id="project-desc" class="page-desc"></p>
+          <!-- <div class="project-cover">
             <span style="background-image: url(assets/images/mock.png)"></span>
-          </div>
+          </div> -->
 
           <div class="project-container">
             <a href="#" class="form-button" data-modal-trigger="#create-task-modal">Create task</a>
-            <div class="project-item">
+
+            <!-- <div class="project-item">
               <div class="project-title">
                 <h2 class="project-name">Interland</h2>
                 <h3 class="project-owner">Owner</h3>
@@ -65,9 +67,9 @@
                   <h5 class="time"><span>13:40</span> Hours</h5>
                 </div>
               </div>
-            </div>
+            </div> -->
 
-            <div class="project-item">
+            <!-- <div class="project-item">
               <div class="project-title">
                 <h2 class="project-name">Interland</h2>
                 <h3 class="project-owner">Owner</h3>
@@ -79,7 +81,7 @@
                   <h5 class="time"><span>2:40</span> Hours</h5>
                 </div>
               </div>
-            </div>
+            </div> -->
 
           </div>
         </div>
@@ -146,13 +148,13 @@
 <script src="firebase/firebase.js"></script>
 <script>
 
-  function createProject(name,desc){
-    var user = firebase.auth().currentUser;
-    firebase.database().ref('projects/' + user.uid).set({
-      name: name,
-      desc: desc
-    }).then(function(t){
-      window.location.href = 'project-detail.html';
+  function getProject(pid){
+    var userId = firebase.auth().currentUser.uid;
+    firebase.database().ref('/projects/' + userId + '/' + pid).once('value').then(function(snapshot) {
+
+      var project = snapshot.val();
+      jQuery('#project-name').html(project.name);
+      jQuery('#project-desc').html(project.desc);
     });
   }
 
@@ -168,7 +170,9 @@ document.addEventListener('DOMContentLoaded', function() {
   // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
   try {
-    initAuth();
+    initAuth(function(){
+      getProject(getParam('pid'));
+    });
 
     jQuery('form').on('submit',function(e){
       if($(pwa_form_validate.selector).parsley().validate()){

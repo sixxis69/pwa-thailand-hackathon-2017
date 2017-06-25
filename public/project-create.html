@@ -92,11 +92,11 @@
 
   function createProject(name,desc){
     var user = firebase.auth().currentUser;
-    firebase.database().ref('projects/' + user.uid).set({
+    firebase.database().ref('projects/' + user.uid).push({
       name: name,
       desc: desc
-    }).then(function(t){
-      window.location.href = 'project-detail.html';
+    }).then((snap) => {
+       window.location.href = 'project-detail.html?pid=' + snap.key;
     });
   }
 
