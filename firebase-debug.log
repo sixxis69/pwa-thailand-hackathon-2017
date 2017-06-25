@@ -1,36 +1,36 @@
-[debug] [2017-06-25T09:17:33.086Z] ----------------------------------------------------------------------
-[debug] [2017-06-25T09:17:33.088Z] Command:      /usr/local/bin/node /usr/local/bin/firebase serve
-[debug] [2017-06-25T09:17:33.088Z] CLI Version:  3.9.1
-[debug] [2017-06-25T09:17:33.089Z] Platform:     darwin
-[debug] [2017-06-25T09:17:33.089Z] Node Version: v6.10.3
-[debug] [2017-06-25T09:17:33.089Z] Time:         Sun Jun 25 2017 16:17:33 GMT+0700 (ICT)
-[debug] [2017-06-25T09:17:33.089Z] ----------------------------------------------------------------------
+[debug] [2017-06-25T10:12:03.196Z] ----------------------------------------------------------------------
+[debug] [2017-06-25T10:12:03.198Z] Command:      /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2017-06-25T10:12:03.199Z] CLI Version:  3.9.1
+[debug] [2017-06-25T10:12:03.199Z] Platform:     darwin
+[debug] [2017-06-25T10:12:03.199Z] Node Version: v6.10.3
+[debug] [2017-06-25T10:12:03.200Z] Time:         Sun Jun 25 2017 17:12:03 GMT+0700 (ICT)
+[debug] [2017-06-25T10:12:03.200Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2017-06-25T09:17:33.100Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2017-06-25T09:17:33.100Z] > authorizing via signed-in user
-[debug] [2017-06-25T09:17:33.102Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2017-06-25T09:17:33.102Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/G35GFd8S6rjgOjYQI68r-hgX8A5wdmZpGPXnzuPfZb4',
+[debug] [2017-06-25T10:12:03.210Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-06-25T10:12:03.210Z] > authorizing via signed-in user
+[debug] [2017-06-25T10:12:03.212Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-06-25T10:12:03.212Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/G35GFd8S6rjgOjYQI68r-hgX8A5wdmZpGPXnzuPfZb4',
   client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
   client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
   grant_type: 'refresh_token',
   scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Sun Jun 25 2017 16:17:33 GMT+0700 (ICT)
-[debug] [2017-06-25T09:17:33.397Z] <<< HTTP RESPONSE 200
-[debug] [2017-06-25T09:17:33.400Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/pwa-2017-819c0  
- Sun Jun 25 2017 16:17:33 GMT+0700 (ICT)
-[debug] [2017-06-25T09:17:34.834Z] <<< HTTP RESPONSE 200
-[debug] [2017-06-25T09:17:34.835Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/pwa-2017-819c0/tokens  
- Sun Jun 25 2017 16:17:34 GMT+0700 (ICT)
-[debug] [2017-06-25T09:17:36.060Z] <<< HTTP RESPONSE 200
+ Sun Jun 25 2017 17:12:03 GMT+0700 (ICT)
+[debug] [2017-06-25T10:12:03.481Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-25T10:12:03.485Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/pwa-2017-819c0  
+ Sun Jun 25 2017 17:12:03 GMT+0700 (ICT)
+[debug] [2017-06-25T10:12:05.020Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-25T10:12:05.021Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/pwa-2017-819c0/tokens  
+ Sun Jun 25 2017 17:12:05 GMT+0700 (ICT)
+[debug] [2017-06-25T10:12:06.053Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/Applications/XAMPP/xamppfiles/htdocs/jobs/2017-jun/pwa'...
 [info] 
-[debug] [2017-06-25T09:17:36.062Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/pwa-2017-819c0  
- Sun Jun 25 2017 16:17:36 GMT+0700 (ICT)
-[debug] [2017-06-25T09:17:37.598Z] <<< HTTP RESPONSE 200
-[debug] [2017-06-25T09:17:37.598Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/290762061657/clients/_:getWebAppConfig  
- Sun Jun 25 2017 16:17:37 GMT+0700 (ICT)
-[debug] [2017-06-25T09:17:38.476Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-25T10:12:06.056Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/pwa-2017-819c0  
+ Sun Jun 25 2017 17:12:06 GMT+0700 (ICT)
+[debug] [2017-06-25T10:12:07.659Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-25T10:12:07.660Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/290762061657/clients/_:getWebAppConfig  
+ Sun Jun 25 2017 17:12:07 GMT+0700 (ICT)
+[debug] [2017-06-25T10:12:09.048Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] ✔  hosting: Local server: http://localhost:5000
 

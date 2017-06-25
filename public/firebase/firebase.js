@@ -10,8 +10,6 @@ function initAuth(){
       var uid = user.uid;
       var providerData = user.providerData;
       // ...
-
-      // window.location.href = 'project-list.html';
     } else {
       // User is signed out.
       // ...

@@ -81,34 +81,21 @@
       var errorMessage = error.message;
       // ...
       jQuery('.error-log').html(error.message);
+      pwa_loading.hide();
     }).then(function(t){
       if(t){
-        window.location.href = 'project-list.html';
+        var user = firebase.auth().currentUser;
+        setUserData(user.uid,name,mobile);
       }
     });
-  }
-
-  function updateProfile(name, mobile){
-    var user = firebase.auth().currentUser;
-    console.log(user.uid);
-
-    // user.updateProfile({
-    //   displayName: displayName
-    // }).then(function() {
-    //   // Update successful.
-    //   console.log('update profilie complete');
-    // }, function(error) {
-    //   // An error happened.
-    //   console.log('update profile failed');
-    // });
-
-    setUserData(user.uid,name,mobile);
   }
 
   function setUserData(uid, name, mobile) {
     firebase.database().ref('users/' + uid).set({
       name: name,
       mobile: mobile
+    }).then(function(t){
+      window.location.href = 'project-list.html';
     });
   }
 
@@ -132,6 +119,7 @@
 
       jQuery('form').on('submit',function(e){
         if($(pwa_form_validate.selector).parsley().validate()){
+          pwa_loading.show();
           e.preventDefault();
           var email = jQuery('#pwa-email').val();
           var pass = jQuery('#pwa-password').val();
