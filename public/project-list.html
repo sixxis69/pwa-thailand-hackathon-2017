@@ -94,59 +94,47 @@
         </div>
       </div>
       <!-- END PAGE CONTENT -->
-      <!-- <nav>
-      <div class="nav-container">
-      <a class="nav-item" href="project-list.html">
-      <span>Project</span>
-    </a>
-    <a class="nav-item" href="task-list.html">
-    <span>Mytask</span>
-    <div class="status-container">
-    <div class="status"></div>
-  </div>
-</a>
-</div>
-</nav> -->
 
-<div class="page-footer">
-  <a class="active" href="project-list.html">
-    <span>Project</span>
-  </a>
-  <a href="task-list.html">
-    <span>Mytask</span>
-    <div class="status-container">
-      <div class="status"></div>
+      <div class="page-footer">
+        <a class="active" href="project-list.html">
+          <span>Project</span>
+        </a>
+        <a href="task-list.html">
+          <span>Mytask</span>
+          <div class="status-container">
+            <div class="status"></div>
+          </div>
+        </a>
+
+        <div class="button-action">
+          <a href="project-create.html" class="btn-create"><span></span></a>
+        </div>
+      </div>
     </div>
-  </a>
-
-  <div class="button-action">
-    <a href="project-create.html" class="btn-create"><span></span></a>
   </div>
-</div>
-</div>
-</div>
 
-<script src="assets/scripts.js"></script>
-<script src="firebase/firebase.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-  // // The Firebase SDK is initialized and available here!
-  //
-  // firebase.auth().onAuthStateChanged(user => { });
-  // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-  // firebase.messaging().requestPermission().then(() => { });
-  // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-  //
-  // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+  <script src="assets/scripts.js"></script>
+  <script src="firebase/firebase.js"></script>
+  <script>
 
-  try {
-    console.log('SDK is loaded');
+  document.addEventListener('DOMContentLoaded', function() {
+    // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    // // The Firebase SDK is initialized and available here!
+    //
+    // firebase.auth().onAuthStateChanged(user => { });
+    // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+    // firebase.messaging().requestPermission().then(() => { });
+    // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+    //
+    // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-  } catch (e) {
-    console.error(e);
-  }
-});
-</script>
+    try {
+      console.log('SDK is loaded');
+
+    } catch (e) {
+      console.error(e);
+    }
+  });
+  </script>
 </body>
 </html>

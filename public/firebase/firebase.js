@@ -11,16 +11,16 @@ function initAuth(){
       var providerData = user.providerData;
       // ...
 
-      window.location.href = 'project-list.html';
+      // window.location.href = 'project-list.html';
     } else {
       // User is signed out.
       // ...
       console.log('signed out');
-
+      window.location.href = 'login.html';
     }
   });
 }
 
-function sigeOut(){
+function signOut(){
   firebase.auth().signOut();
 }

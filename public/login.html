@@ -71,11 +71,9 @@
       var errorCode = error.code;
       var errorMessage = error.message;
 
-      if(error){
-        jQuery('.error-log').html(error.message);
-      }else{
-        console.log('login pass');
-      }
+      jQuery('.error-log').html(error.message);
+    }).then(function(t){
+      window.location.href = 'project-list.html';
     });
   }
 
@@ -96,7 +94,7 @@
       // document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
       console.log('SDK is loaded');
 
-      initAuth();
+
 
       jQuery('form').on('submit',function(e){
         if($(pwa_form_validate.selector).parsley().validate()){
