@@ -27,11 +27,13 @@ var JS = {
     BASE.src + 'assets/js/vendors/jquery/3.2.1/jquery.min.js',
     BASE.src + 'assets/js/vendors/modernizr/modernizr.min.js',
     BASE.src + 'assets/js/vendors/pwacompat.min.js',
+    BASE.src + 'assets/js/vendors/selectize.min.js',
     BASE.src + 'assets/js/app/base/global.js',
     BASE.src + 'assets/js/app/base/base.js',
     BASE.src + 'assets/js/app/page/global-container.js',
     BASE.src + 'assets/js/app/components/modal.js',
-    BASE.src + 'assets/js/app/components/toggle-button.js'
+    BASE.src + 'assets/js/app/components/toggle-button.js',
+    BASE.src + 'assets/js/app/components/email-select.js'
   ],
   dist: BASE.dist + 'assets',
   filename: 'scripts.js',

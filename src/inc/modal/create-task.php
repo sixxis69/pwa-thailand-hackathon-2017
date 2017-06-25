@@ -6,17 +6,16 @@
         <div class="modal-content">
 
           <form class="form" action="#" data-pwa-validate>
-            <!-- <h3 class="modal-title">TASK</h3> -->
             <div class="form-headline">
-            <h1 class="type-headline">Task</h1>
-          </div>
+              <h1 class="type-headline">Task</h1>
+            </div>
             <div class="form-group">
               <label for="">TASK NAME</label>
               <input class="form-control" type="text">
             </div>
             <div class="form-group">
               <label for="">ASSIGN (OPTIONAL)</label>
-              <input class="form-control" type="text">
+              <input class="form-control" type="text" data-email-select>
             </div>
             <div class="form-group">
               <label for="">TASK DETAIL</label>
@@ -28,7 +27,7 @@
             </div>
           </form>
         </div>
-        <div class="modal-close-bt">
+        <div class="modal-close-bt" data-pwa-modal-close>
           <span></span>
         </div>
       </div>

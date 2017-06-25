@@ -74,8 +74,6 @@ var pwa_modal = {
         $(id).removeClass(pwa_modal.activeClass);
         $(id).delay(animateDuration).hide(0);
 
-        ttm_gallery.resetSlider();
-
         $('body').attr('style','');
       }
     },

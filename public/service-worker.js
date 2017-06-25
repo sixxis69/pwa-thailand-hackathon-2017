@@ -8,6 +8,12 @@ self.addEventListener('install', function(e) {
       return cache.addAll([
         '',
         'login.html',
+        'sign-up.html',
+        'project-list.html',
+        'project-create.html',
+        'project-detail.html',
+        'task-list.html',
+        'task-detail.html',
         'assets/styles.css',
         'assets/scripts.js'
       ]);

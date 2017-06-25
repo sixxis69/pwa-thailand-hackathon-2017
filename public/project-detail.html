@@ -2,22 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Progressive Time</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Progressive Time</title>
 
-<link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="manifest.json">
 
-<!-- VIEWPORT -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta name="HandheldFriendly" content="true">
-<meta name="format-detection" content="telephone=no">
+  <!-- VIEWPORT -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="format-detection" content="telephone=no">
 
-<!-- CSS -->
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css">
+  <!-- CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-    <div class="global-container">
+  <div class="global-container">
 
     <div class="page-container">
       <!-- BEGIN PAGE TITLE -->
@@ -29,58 +29,58 @@
       <!-- BEGIN PAGE CONTENT -->
       <div class="page-content">
         <div class="page-content-outer">
-        <div class="project-cover">
-          <span style="background-image: url(assets/images/mock.png)"></span>
-        </div>
-
-        <div class="project-container">
-          <a href="#" class="form-button" data-modal-trigger="#create-task-modal">Create task</a>
-          <div class="project-item">
-            <div class="project-title">
-              <h2 class="project-name">Interland</h2>
-              <h3 class="project-owner">Owner</h3>
-            </div>
-
-            <div class="detail-container">
-              <div class="time-container">
-                <label>Time Used</label>
-                <h5 class="time"><span>13:40</span> Hours</h5>
-              </div>
-            </div>
+          <div class="project-cover">
+            <span style="background-image: url(assets/images/mock.png)"></span>
           </div>
 
-          <div class="project-item">
-            <div class="project-title">
-              <h2 class="project-name">Interland</h2>
-              <h3 class="project-owner">Owner</h3>
-            </div>
-            <div class="detail-container">
+          <div class="project-container">
+            <a href="#" class="form-button" data-modal-trigger="#create-task-modal">Create task</a>
+            <div class="project-item">
+              <div class="project-title">
+                <h2 class="project-name">Interland</h2>
+                <h3 class="project-owner">Owner</h3>
+              </div>
 
-              <div class="time-container">
-                <label>Time Used</label>
-                <h5 class="time"><span>2:40</span> Hours</h5>
+              <div class="detail-container">
+                <div class="time-container">
+                  <label>Time Used</label>
+                  <h5 class="time"><span>13:40</span> Hours</h5>
+                </div>
               </div>
             </div>
-          </div>
 
-        </div>
+            <div class="project-item">
+              <div class="project-title">
+                <h2 class="project-name">Interland</h2>
+                <h3 class="project-owner">Owner</h3>
+              </div>
+              <div class="detail-container">
+
+                <div class="time-container">
+                  <label>Time Used</label>
+                  <h5 class="time"><span>2:40</span> Hours</h5>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
 
       </div>
       <!-- END PAGE CONTENT -->
 
       <!-- <nav>
-  <div class="nav-container">
-    <a class="nav-item" href="project-list.html">
+      <div class="nav-container">
+      <a class="nav-item" href="project-list.html">
       <span>Project</span>
     </a>
     <a class="nav-item" href="task-list.html">
-      <span>Mytask</span>
-      <div class="status-container">
-        <div class="status"></div>
-      </div>
-    </a>
+    <span>Mytask</span>
+    <div class="status-container">
+    <div class="status"></div>
   </div>
+</a>
+</div>
 </nav> -->
 
 <div class="page-footer">
@@ -99,7 +99,7 @@
   </div>
 </div>
 
-      <div id="create-task-modal" class="modal" data-pwa-modal>
+<div id="create-task-modal" class="modal" data-pwa-modal>
   <div class="modal-wrapper">
     <div class="va-outer">
       <div class="va-inner">
@@ -107,17 +107,16 @@
         <div class="modal-content">
 
           <form class="form" action="#" data-pwa-validate>
-            <!-- <h3 class="modal-title">TASK</h3> -->
             <div class="form-headline">
-            <h1 class="type-headline">Task</h1>
-          </div>
+              <h1 class="type-headline">Task</h1>
+            </div>
             <div class="form-group">
               <label for="">TASK NAME</label>
               <input class="form-control" type="text">
             </div>
             <div class="form-group">
               <label for="">ASSIGN (OPTIONAL)</label>
-              <input class="form-control" type="text">
+              <input class="form-control" type="text" data-email-select>
             </div>
             <div class="form-group">
               <label for="">TASK DETAIL</label>
@@ -129,21 +128,25 @@
             </div>
           </form>
         </div>
-        <div class="modal-close-bt">
+        <div class="modal-close-bt" data-pwa-modal-close>
           <span></span>
         </div>
       </div>
     </div>
   </div>
 </div>
-    </div>
-  </div>
 
-  <script src="assets/scripts.js"></script>
-  <script>
-    jQuery(document).ready(function(){
-      jQuery('.nav-item').eq(0).addClass('is-active');
-    });
-  </script>
+</div>
+</div>
+
+<script src="assets/scripts.js"></script>
+<script>
+  // NOTE: add email
+  jQuery(document).ready(function(){
+    pwa_email_select.addOption('sixxis69@gmail.com','big');
+    pwa_email_select.addOption('iam.hachimitsu@gmail.com', 'nachaporn');
+    pwa_email_select.addOption('punnawat@gmail.com', 'punnawat');
+  });
+</script>
 </body>
 </html>
