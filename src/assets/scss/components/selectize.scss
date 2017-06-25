@@ -1,0 +1,22 @@
+.selectize-dropdown-content{
+  font-size: 14px;
+  background-color: #fff;
+}
+.selectize-input{
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.selectize-control{
+  height: auto;
+}
+.selectize-control.plugin-remove_button [data-value]{
+  .label{
+    display: block;
+  }
+}
+
+.selectize-control.multi .selectize-input>div{
+  background-color: $brand;
+  color: $color-white;
+}

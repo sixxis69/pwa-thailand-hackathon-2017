@@ -81,7 +81,6 @@
     margin: 20px;
     cursor: pointer;
         box-shadow: 0 2px 9px 0 rgba(0,0,0,.3);
-            transform: rotate(45deg);
         span {
           width: 18px;
           height: 18px;
@@ -93,27 +92,43 @@
     &:hover{
 
     }
+    opacity: 0;
+    transform: scale(1.1) rotate(15deg);
+    transition: opacity .3s $pwa-easing, transform .3s $pwa-easing;
   }
   .modal-overlay{
     opacity: 0;
-
-    // transition: opacity .4s $easeOutQuint;
+    transition: opacity .4s $pwa-easing;
   }
   .modal-content{
-    opacity: 0;
-    transform: translate3d(0,10px,0);
-
-    // transition: transform .4s $easeOutQuint, opacity .4s $easeOutQuint;
+    form > *{
+      opacity: 0;
+      transform: translate3d(0,20px,0);
+      transition: transform .4s $pwa-easing, opacity .4s $pwa-easing;
+    }
   }
   &.modal-is-active{
     .modal-overlay{
       opacity: 1;
-      // transition: opacity .4s $easeOutQuint;
+      transition: opacity .4s $pwa-easing;
+    }
+    .modal-close-bt{
+      opacity: 1;
+      transform: scale(1) rotate(45deg);
+      transition: opacity .4s $pwa-easing .4s, transform .3s $pwa-easing .4s;
     }
     .modal-content{
-      opacity: 1;
-      transform: translate3d(0,0,0);
-      // transition: transform .4s $easeOutQuint .1s, opacity .4s $easeOutQuint .1s;
+      form > * {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+        @for $i from 1 through 10{
+          &:nth-child(#{$i}){
+            $delay: 0.1 + $i * 0.05 + s;
+            $duration: .5s;
+            transition: opacity $duration $pwa-easing $delay, transform $duration $pwa-easing $delay;
+          }
+        }
+      }
     }
   }
 }
